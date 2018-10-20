@@ -1,5 +1,6 @@
 ## Quick Start
-Run the following commands to run the App:
+Run the following commands on CMD to run the App:
+0. Install npm from [here](https://www.npmjs.com/get-npm)
 1. `npm install`
 2. `npm start`
 
@@ -8,7 +9,7 @@ Run the following commands to run the App:
 * Adapts to user defined boundaries of the independent variable x
 * Has a default range for plotting when boundaries are not specified
 * Able to run offline after installation of npm libraries
-* Readjust components responsively to screen resize
+* Readjusts components responsively to screen resize
 * Displays history regarding previous inputs
 * Moves history to equation bar upon user click
 
