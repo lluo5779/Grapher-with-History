@@ -29,8 +29,11 @@ class History extends React.Component{
                     {history.map((eqn, index)=>{
 
                         return(
-                            <li className='History-item fade-in' key={index} onClick={this.props.onClick}>f(x) = {eqn}</li>
-                     );
+                            <li className='History-item fade-in' 
+                            key={index} 
+                            onClick={this.props.onClick}>f(x) = {eqn}
+                            </li>
+                        );
                     })}
                     </ol>
                 </div>

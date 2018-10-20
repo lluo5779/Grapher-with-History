@@ -118,8 +118,6 @@ class App extends Component {
                 marker: {color: markerColor},                
             }
             /*alert(JSON.stringify(dataPacket))*/
-
-
             return dataPacket
         }
         catch (err) {
@@ -145,30 +143,30 @@ class App extends Component {
             <div className="App">
 
             <div className = 'Container'>
-            <EquationInput values={{equation:this.state.currentInput, xFr:this.state.xFr, xTo: this.state.xTo}} 
-            onChange={this.changeHandler} 
-            onSubmit={this.submitHandler} 
-            windowWidth={this.state.windowWidth} />
-            
-            <History history={this.state.history} onClick={this.returnValueToBar} />
+                <EquationInput values={{equation:this.state.currentInput, xFr:this.state.xFr, xTo: this.state.xTo}} 
+                onChange={this.changeHandler} 
+                onSubmit={this.submitHandler} 
+                windowWidth={this.state.windowWidth} />
+
+                <History history={this.state.history} onClick={this.returnValueToBar} />
             </div>
 
             <div className='Graph'>
-            <Plot data={[this.state.currentPacket]} 
-            layout={{
-            width: this.state.windowWidth-300, 
-            height: this.state.windowHeight/2+50,
-            title: 'f(x) = '+this.state.currentSubmission, 
-            xaxis: {
-            range: [this.state.currentXFr,  
-            this.state.currentXTo]
-            },
-             transition: {
-              duration: 500,
-              easing: 'cubic-in-out'
-            },
-            }} />            
-            </div>
+                <Plot data={[this.state.currentPacket]} 
+                    layout={{
+                        width: this.state.windowWidth-400, 
+                        height: this.state.windowHeight-100,
+                        title: 'f(x) = '+this.state.currentSubmission, 
+                        xaxis: {
+                            range: [this.state.currentXFr,  
+                            this.state.currentXTo]
+                        },
+                         transition: {
+                          duration: 500,
+                          easing: 'cubic-in-out'
+                        },
+                    }} />            
+             </div>
             
 
 
