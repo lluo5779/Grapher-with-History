@@ -1,6 +1,6 @@
 ## Installation
-Install all req'd dependencies
-* npm install 
+`<addr>` npm install 
 ## Quick Start
-This App uses create-react-app
-* npm start  
+`<addr>` npm start  
+
+This App uses create-react-app, math.js and react-plotly.js.
