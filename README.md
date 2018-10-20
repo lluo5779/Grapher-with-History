@@ -1,8 +1,8 @@
 ## Quick Start
 Run the following commands on CMD to run the App:
-0. Install npm from [here](https://www.npmjs.com/get-npm)
-1. `npm install`
-2. `npm start`
+1. Install npm from [here](https://www.npmjs.com/get-npm)
+2. `npm install`
+3. `npm start`
 
 ## Features
 * Plots one-variable expressions on displayed graph. (eg. “x^2”, “sin(x)”, “cos(x)”, “x+1”, “2*x + 10”)
