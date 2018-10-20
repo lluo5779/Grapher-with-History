@@ -4,7 +4,7 @@ import EquationInput from './components/equationInput'
 import History from './components/history'
 
 import * as math from 'mathjs'
-import Plot from 'react-plotly.js';
+import Plot from 'react-plotly.js'
 
 const initialPacket = {
     x: [1,2,3,4,5],
@@ -83,8 +83,8 @@ class App extends Component {
             var xTo = (this.state.xTo==='') ? 10: this.state.xTo;
 
             var dataPacket = this.prepareDataForPlotly(xFr, xTo)
-
-            if (dataPacket && Number.parseFloat(this.state.currentInput)!==0){
+            
+            if (dataPacket ){
                 this.setState({
                     currentSubmission: this.state.currentInput,
                     currentXFr: xFr,
